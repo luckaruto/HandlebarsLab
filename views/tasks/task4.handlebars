@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="text-center">Zodiac Characteristics</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        {{#each data }}
+            <div class="col-md-3">
+                <a href="../../task4/{{this.name}} ">
+                    <img src={{this.imagePath}} alt={{this.name}}   class="img-circle img-thumbnail">
+                    <h2 class="text-center">{{this.name}}<br />
+                        <small>{{this.dates}}</small>
+                        </br />
+                    </h2>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+</div>
