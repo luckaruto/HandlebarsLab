@@ -10,6 +10,7 @@ router.get("/", function(req, res, next) {
 router.get("/task1", function(req, res, next) {
     res.render("tasks/task1", { title: "Inspiring Quotes" });
 });
+
 router.get("/task2", function(req, res, next) {
     let salary = req.query.salary | 0;
     let jar55 = (salary * 0.55).toFixed(2);
