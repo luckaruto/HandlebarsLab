@@ -1,1 +1,30 @@
-<p>Task do in here</p>
+<!--contain-->
+<div class="container">
+    <h1 class="text-center">Inspiring Quotes</h1>
+</div>
+<div class="container">
+    <div class="row destacados">
+        {{#each data }}
+        <div class="col-md-3">
+            <a href="/task1?title={{title}}">
+                <img src={{imagePath}} alt={{title}} class="img-circle img-thumbnail">
+                <h2>{{title}}</h2>
+            </a>
+        </div>
+        {{/each}}
+
+
+
+    </div>
+    <div class="row text-center">
+        <img class="img-thumbnail" src={{quotePath}} />
+    </div>
+</div>
+<!--/contain-->
+<script>
+
+    window.addEventListener('load', function () {
+        var eles = document.getElementsByClassName('container-fluid text-center');
+        eles[0].innerHTML = 'Copyright &copy; 2022 by Huỳnh Minh Thành 20127628'
+    })
+</script>
